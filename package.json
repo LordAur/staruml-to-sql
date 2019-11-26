@@ -1,0 +1,45 @@
+{
+  "name": "staruml-to-sql",
+  "version": "1.0.0",
+  "description": "Convert StarUML .mdj file to .sql file.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "mocha --timeout 30000 --exit",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov --skip-empty | coveralls",
+    "coverage:standard": "nyc npm test && nyc report --reporter=text-lcov --skip-empty",
+    "coverage:generate": "nyc report --reporter=html"
+  },
+  "keywords": [
+    "StarUML",
+    "mysql",
+    "mariadb"
+  ],
+  "author": {
+    "name": "Yudha Pratama Wicaksana",
+    "email": "yudha.webdev@gmail.com",
+    "url": "https://yudhapratama.com",
+    "twitter": "https://twitter.com/LordAur"
+  },
+  "homepage": "https://github.com/LordAur/staruml-to-mysql",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LordAur/staruml-to-mysql"
+  },
+  "bugs": {
+    "url": "https://github.com/LordAur/staruml-to-mysql/issues",
+    "email": "yudha.webdev@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^3.0.8",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
